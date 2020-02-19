@@ -4,10 +4,6 @@ A code sample that walks you through how to run [Search Tweets Python](https://g
 Be sure to add your `secrets.yaml` to your `.gitingore` and check out [our guide on securing keys and tokens](https://developer.twitter.com/en/docs/basics/authentication/guides/securing-keys-and-tokens).
 
 ## Support
-Create a [new issue](https://github.com/twitterdev/getting-started-with-r/issues) on GitHub.
-
-
-## Support
 
 Create a [new issue](https://github.com/twitterdev/search-tweets-python-in-r/issues) on GitHub.
 
