@@ -1,4 +1,4 @@
-# Install and call the package
+# Install and call the packages
 install.packages('reticulate')
 install.packages('dplyr')
 
