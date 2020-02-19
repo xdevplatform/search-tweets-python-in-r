@@ -11,10 +11,11 @@ path_to_python <- "/usr/bin/python3.7"
 use_python(path_to_python)
 
 
-# Create the virtual enviornment
+# Create the virtualenv
 virtualenv_install("tweetenv", "searchtweets", ignore_installed = TRUE)
 virtualenv_install("tweetenv", "pandas", ignore_installed = TRUE)
 use_virtualenv("tweetenv", required = TRUE)
+
 
 # Import searchtweets and yaml
 st <- import("searchtweets")
@@ -34,7 +35,7 @@ input <- readline('What handle do you want to get Tweets from? ')
 today <- toString(Sys.Date())
 thirty_days <- toString(as.Date(today) - 30)
 
-# Formating the imput to work with the rule
+# Formatting the input to work with the rule
 pt_format <- sprintf("from:%s", input)
 print(pt_format)
 
