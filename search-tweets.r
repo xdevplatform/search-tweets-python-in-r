@@ -12,9 +12,9 @@ use_python(path_to_python)
 
 
 # Create the virtual enviornment
-virtualenv_install("o", "searchtweets", ignore_installed = TRUE)
-virtualenv_install("o", "pandas", ignore_installed = TRUE)
-use_virtualenv("o", required = TRUE)
+virtualenv_install("tweetenv", "searchtweets", ignore_installed = TRUE)
+virtualenv_install("tweetenv", "pandas", ignore_installed = TRUE)
+use_virtualenv("tweetenv", required = TRUE)
 
 # Import searchtweets and yaml
 st <- import("searchtweets")
