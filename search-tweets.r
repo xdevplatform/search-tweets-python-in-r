@@ -1,4 +1,4 @@
-# Install and call the package
+# Install and call the packages
 install.packages('reticulate')
 install.packages('dplyr')
 
@@ -11,10 +11,11 @@ path_to_python <- "/usr/bin/python3.7"
 use_python(path_to_python)
 
 
-# Create the virtual environment
-virtualenv_install("o", "searchtweets", ignore_installed = TRUE)
-virtualenv_install("o", "pandas", ignore_installed = TRUE)
-use_virtualenv("o", required = TRUE)
+# Create the virtualenv
+virtualenv_install("tweetenv", "searchtweets", ignore_installed = TRUE)
+virtualenv_install("tweetenv", "pandas", ignore_installed = TRUE)
+use_virtualenv("tweetenv", required = TRUE)
+
 
 # Import searchtweets and yaml
 st <- import("searchtweets")
