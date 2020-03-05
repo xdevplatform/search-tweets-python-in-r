@@ -17,7 +17,7 @@ virtualenv_install("tweetenv", "pandas", ignore_installed = TRUE)
 use_virtualenv("tweetenv", required = TRUE)
 
 
-# Import searchtweets and yaml
+# Import needed Python packages
 st <- import("searchtweets")
 pd <- import("pandas")
 
